@@ -18,7 +18,7 @@ public class Level1UI : MonoBehaviour
     public Button restartButton;
     public Button mainMenuButton;
     public Button selectLevelButton;
-    public Button startLevelButton;
+    public Button tekrarButton;
     [Header("Level Buttons")]
     public Button Level1Button;
     public Button Level2Button;
@@ -41,10 +41,14 @@ public class Level1UI : MonoBehaviour
     public List<Button> returnButtons;
     private bool check = false;
     Transform starterPosition;
+    private void Awake()
+    {
+        starterPosition = playerPosition;
+    }
     void Start()
     {
         EnableLevelMenu();
-        starterPosition = playerPosition;
+        
         nextButton.onClick.AddListener(NextLevel);
         restartButton.onClick.AddListener(RestartLevel);
         mainMenuButton.onClick.AddListener(ReturnToMain);
@@ -54,6 +58,7 @@ public class Level1UI : MonoBehaviour
         Level3Button.onClick.AddListener(ChangeLevelto3);
         Level4Button.onClick.AddListener(ChangeLevelto4);
         Level5Button.onClick.AddListener(ChangeLevelto5);
+        tekrarButton.onClick.AddListener(RestartLevel);
         foreach (var item in returnButtons)
         {
             item.onClick.AddListener(EnableLevelMenu);
@@ -106,7 +111,6 @@ public class Level1UI : MonoBehaviour
     {
         HideAll();        
         SceneTransitionManager.singleton.GoToSceneAsync(nextIndex-1);
-        playerPosition = starterPosition;
     }
     public void NextLevel()
     {
