@@ -1971,7 +1971,6 @@ MonoBehaviour:
   restartButton: {fileID: 2008140111}
   mainMenuButton: {fileID: 68125130}
   selectLevelButton: {fileID: 781824006}
-  startLevelButton: {fileID: 0}
   tekrarButton: {fileID: 2114908444}
   Level1Button: {fileID: 1908957027}
   Level2Button: {fileID: 1371315533}
@@ -1989,7 +1988,7 @@ MonoBehaviour:
   playerPosition: {fileID: 530842987}
   nextIndex: 2
   returnButtons:
-  - {fileID: 0}
+  - {fileID: 178236505}
 --- !u!1 &435009920
 GameObject:
   m_ObjectHideFlags: 0

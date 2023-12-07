@@ -72,7 +72,7 @@ public class PotionLevel : MonoBehaviour
     public void RestartLevel()
     {
         HideAll();
-        SceneTransitionManager.singleton.GoToSceneAsync(currentIndex);
+        Application.LoadLevel(Application.loadedLevel);
     }
     public void NextLevel()
     {

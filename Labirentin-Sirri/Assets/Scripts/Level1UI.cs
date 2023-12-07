@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Rendering.Universal;
-
+using UnityEngine.SceneManagement;
 public class Level1UI : MonoBehaviour
 {
     
@@ -109,8 +109,8 @@ public class Level1UI : MonoBehaviour
     }
     public void RestartLevel()
     {
-        HideAll();        
-        SceneTransitionManager.singleton.GoToSceneAsync(nextIndex-1);
+        HideAll();
+        Application.LoadLevel(Application.loadedLevel);
     }
     public void NextLevel()
     {
