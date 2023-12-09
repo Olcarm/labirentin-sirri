@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Rendering.Universal;
-
+using UnityEngine.SceneManagement;
 public class Level1UI : MonoBehaviour
 {
     
@@ -12,15 +12,19 @@ public class Level1UI : MonoBehaviour
     public GameObject levelMenu;
     public GameObject selectLevel;
     public GameObject completeLevel;
-    public TMPro.TMP_Dropdown ddLevels;
 
     [Header("Main Menu Buttons")]
     public Button nextButton;
     public Button restartButton;
     public Button mainMenuButton;
     public Button selectLevelButton;
-    public Button startLevelButton;
-
+    public Button tekrarButton;
+    [Header("Level Buttons")]
+    public Button Level1Button;
+    public Button Level2Button;
+    public Button Level3Button;
+    public Button Level4Button;
+    public Button Level5Button;
     [Header("Socket Interactors")]
     public GameObject object1;
     public GameObject socket1;
@@ -30,24 +34,31 @@ public class Level1UI : MonoBehaviour
     public GameObject socket3;
     public GameObject object4;
     public GameObject socket4;
-
+    public Transform playerPosition;
     [Header("Next Level Index")]
     public int nextIndex;
 
     public List<Button> returnButtons;
     private bool check = false;
-
-
+    Transform starterPosition;
+    private void Awake()
+    {
+        starterPosition = playerPosition;
+    }
     void Start()
     {
         EnableLevelMenu();
-
+        
         nextButton.onClick.AddListener(NextLevel);
         restartButton.onClick.AddListener(RestartLevel);
         mainMenuButton.onClick.AddListener(ReturnToMain);
         selectLevelButton.onClick.AddListener(SelectLevels);
-        startLevelButton.onClick.AddListener(SwitchToSelectedLevel);
-
+        Level1Button.onClick.AddListener(ChangeLevelto1);
+        Level2Button.onClick.AddListener(ChangeLevelto2);
+        Level3Button.onClick.AddListener(ChangeLevelto3);
+        Level4Button.onClick.AddListener(ChangeLevelto4);
+        Level5Button.onClick.AddListener(ChangeLevelto5);
+        tekrarButton.onClick.AddListener(RestartLevel);
         foreach (var item in returnButtons)
         {
             item.onClick.AddListener(EnableLevelMenu);
@@ -99,7 +110,7 @@ public class Level1UI : MonoBehaviour
     public void RestartLevel()
     {
         HideAll();
-        SceneTransitionManager.singleton.GoToSceneAsync(1);
+        Application.LoadLevel(Application.loadedLevel);
     }
     public void NextLevel()
     {
@@ -111,36 +122,29 @@ public class Level1UI : MonoBehaviour
         HideAll();
         SceneTransitionManager.singleton.GoToSceneAsync(0);
     }
-    public void SwitchToSelectedLevel()
+    public void ChangeLevelto1()
     {
-        if (ddLevels.value == 0) {
-            HideAll();
-            SceneTransitionManager.singleton.GoToSceneAsync(1);
-        }
-        
-        else if (ddLevels.value == 1)
-        {
-            HideAll();
-            SceneTransitionManager.singleton.GoToSceneAsync(2);
-
-        }
-        else if (ddLevels.value == 2)
-        {
-            HideAll();
-            SceneTransitionManager.singleton.GoToSceneAsync(3);
-
-        }
-        else if (ddLevels.value == 3)
-        {
-            HideAll();
-            SceneTransitionManager.singleton.GoToSceneAsync(4);
-
-        }
-        else if (ddLevels.value == 4)
-        {
-            HideAll();
-            SceneTransitionManager.singleton.GoToSceneAsync(5);
-
-        }
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(1);
+    }
+    public void ChangeLevelto2()
+    {
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(2);
+    }
+    public void ChangeLevelto3()
+    {
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(3);
+    }
+    public void ChangeLevelto4()
+    {
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(4);
+    }
+    public void ChangeLevelto5()
+    {
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(5);
     }
 }

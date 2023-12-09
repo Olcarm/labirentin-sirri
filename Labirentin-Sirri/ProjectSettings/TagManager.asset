@@ -8,6 +8,12 @@ TagManager:
   - Flame
   - Water
   - Destroyer
+  - Sari
+  - Orange
+  - Pink
+  - Red
+  - Blue
+  - Green
   layers:
   - Default
   - TransparentFX
