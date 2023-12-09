@@ -27,7 +27,7 @@ public class CiftKapiliOda : MonoBehaviour
         
     }
 
-    void SayiOlusturma()
+    public void SayiOlusturma()
     {
         a = UnityEngine.Random.Range(0, 50);
         b = UnityEngine.Random.Range(0, 50);
