@@ -26,17 +26,21 @@ public class PotionChecks : MonoBehaviour
     Vector3 bluePos;
     public GameObject potGreen;
     Vector3 greenPos;
+    
+    [Header("Menu")]
+    public GameObject MenuUI;
+    [Header("Tag Objects")]
+    public GameObject obj1;
+    public GameObject obj2;
+    public GameObject obj3;
+    [Header("Others")]
+    public Button resetButton;
     public GameObject panzehir;
     public GameObject icme;
     public GameObject tarif;
     public GameObject check1;
     public GameObject check2;
     public GameObject check3;
-
-    public GameObject MenuUI;
-    public GameObject obj1;
-    public GameObject obj2;
-    public GameObject obj3;
 
     private int pot1;
     private int pot2;
@@ -57,6 +61,7 @@ public class PotionChecks : MonoBehaviour
         ChangeColors(img1, pot1, obj1);
         ChangeColors(img2, pot2, obj2);
         ChangeColors(img3, pot3, obj3);
+        resetButton.onClick.AddListener(ReturnObjects);
     }
     void Update()
     {
@@ -73,35 +78,40 @@ public class PotionChecks : MonoBehaviour
         else if(numb == 1){
             Color _orange = new Color(1.0f, 0.64f, 0.0f);
             imgg.color = _orange;
-            obj.tag = "Orange";
+            obj.tag = "Orange";    
             
         }
+
         else if(numb == 2)
         {
             Color32 _pink = new Color32(255, 0, 255, 255);
             imgg.color = _pink;
-            obj.tag = "Pink";
-           
+            obj.tag = "Pink";     
+            
         }
+
         else if(numb == 3)
         {
             imgg.color = Color.red;
-            obj.tag = "Red";
+            obj.tag = "Red";  
             
         }
+
         else if(numb == 4)
         {
             imgg.color = Color.blue;
-            obj.tag = "Blue";
+            obj.tag = "Blue"; 
             
         }
+
         else if (numb == 5)
         {
             imgg.color = Color.green;
-            obj.tag = "Green";
-            
+            obj.tag = "Green";            
         }
+
     }
+
     public void ResetOrderOfPots()
     {
         pot1 = UnityEngine.Random.Range(0, 6);
@@ -127,6 +137,13 @@ public class PotionChecks : MonoBehaviour
                 opt1 = true;
                 check1.SetActive(true);
             }
+            else
+            {
+                ResetOrderOfPots();
+                ChangeColors(img1, pot1, obj1);
+                ChangeColors(img2, pot2, obj2);
+                ChangeColors(img3, pot3, obj3);
+            }
         }
         else if(opt1 == true && opt2 == false)
         {
@@ -140,6 +157,9 @@ public class PotionChecks : MonoBehaviour
                 opt1 = false;
                 check1.SetActive(false);
                 ResetOrderOfPots();
+                ChangeColors(img1, pot1, obj1);
+                ChangeColors(img2, pot2, obj2);
+                ChangeColors(img3, pot3, obj3);
             }
         }
         else if (opt1 == true && opt2 == true)
@@ -159,9 +179,12 @@ public class PotionChecks : MonoBehaviour
                 check1.SetActive(false);
                 check2.SetActive(false);
                 ResetOrderOfPots();
+                ChangeColors(img1, pot1, obj1);
+                ChangeColors(img2, pot2, obj2);
+                ChangeColors(img3, pot3, obj3);
             }
         }
         ReturnObjects();
-    }
+    } 
     
 }
