@@ -724,6 +724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -2775,6 +2776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -4950,8 +4952,8 @@ MonoBehaviour:
   restartButton: {fileID: 2008140111}
   mainMenuButton: {fileID: 68125130}
   selectLevelButton: {fileID: 781824006}
-  nextIndex: 0
-  currentIndex: 0
+  nextIndex: 5
+  currentIndex: 4
   returnButtons: []
 --- !u!1 &441151941
 GameObject:
@@ -7199,6 +7201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -8822,6 +8825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -10505,6 +10509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -11738,6 +11743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -12190,6 +12196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -15253,7 +15260,7 @@ GameObject:
   - component: {fileID: 1093564707}
   m_Layer: 0
   m_Name: Push Button
-  m_TagString: Button
+  m_TagString: Button2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17052,6 +17059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -17419,7 +17427,7 @@ GameObject:
   - component: {fileID: 1329994055}
   m_Layer: 0
   m_Name: Push Button
-  m_TagString: Button
+  m_TagString: Button1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19743,6 +19751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -20757,6 +20766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:
@@ -23559,6 +23569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadTime: 1
+  ayar: {fileID: 0}
   onPressed:
     m_PersistentCalls:
       m_Calls:

@@ -521,8 +521,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 15+12x4-8
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f110a6d109377c34ba1f8e8a7b4e07d2, type: 2}
+  m_sharedMaterial: {fileID: 2140258795890752754, guid: f110a6d109377c34ba1f8e8a7b4e07d2,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -546,8 +547,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 3
-  m_fontSizeBase: 3
+  m_fontSize: 2
+  m_fontSizeBase: 2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -611,7 +612,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140258795890752754, guid: f110a6d109377c34ba1f8e8a7b4e07d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -692,8 +693,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 55
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f110a6d109377c34ba1f8e8a7b4e07d2, type: 2}
+  m_sharedMaterial: {fileID: 2140258795890752754, guid: f110a6d109377c34ba1f8e8a7b4e07d2,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -782,7 +784,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140258795890752754, guid: f110a6d109377c34ba1f8e8a7b4e07d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -822,7 +824,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -1876,7 +1878,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -2276,8 +2278,8 @@ MonoBehaviour:
   mainMenuButton: {fileID: 68125130}
   selectLevelButton: {fileID: 781824006}
   tekrarDeneButton: {fileID: 1371892049}
-  nextIndex: 0
-  currentIndex: 4
+  nextIndex: 4
+  currentIndex: 3
   returnButtons:
   - {fileID: 1457248372}
 --- !u!1 &435009920
@@ -2463,8 +2465,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tekrar Dene
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5b036e831c0c90547b32a8a896d80f79, type: 2}
-  m_sharedMaterial: {fileID: 2427308795250815149, guid: 5b036e831c0c90547b32a8a896d80f79,
+  m_fontAsset: {fileID: 11400000, guid: f110a6d109377c34ba1f8e8a7b4e07d2, type: 2}
+  m_sharedMaterial: {fileID: 2140258795890752754, guid: f110a6d109377c34ba1f8e8a7b4e07d2,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3393,7 +3395,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -3497,7 +3499,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -3595,7 +3597,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -3798,7 +3800,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -5808,7 +5810,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -7809,7 +7811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -405, y: -207.13153}
+  m_AnchoredPosition: {x: -251, y: -207.13153}
   m_SizeDelta: {x: 2.1794, y: 0.8922}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072839876
@@ -7832,10 +7834,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f110a6d109377c34ba1f8e8a7b4e07d2, type: 2}
+  m_sharedMaterial: {fileID: 2140258795890752754, guid: f110a6d109377c34ba1f8e8a7b4e07d2,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7895,7 +7898,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.5316824, y: -0.5200544, z: 0.7673614, w: 0.058273166}
+  m_margin: {x: -0.5316824, y: -0.5200544, z: 0.18277776, w: 0.058273166}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -7924,7 +7927,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140258795890752754, guid: f110a6d109377c34ba1f8e8a7b4e07d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8344,7 +8347,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -8463,7 +8466,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -8776,7 +8779,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -9382,7 +9385,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -10294,8 +10297,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dogru cevabin oldugu kapidan geciniz
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f110a6d109377c34ba1f8e8a7b4e07d2, type: 2}
+  m_sharedMaterial: {fileID: 2140258795890752754, guid: f110a6d109377c34ba1f8e8a7b4e07d2,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12233,7 +12237,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -12950,7 +12954,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
@@ -14896,7 +14900,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+      objectReference: {fileID: 2100000, guid: 78b038bdf7e50464e93011b8db135324, type: 2}
     - target: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1,
         type: 3}
       propertyPath: m_Name
