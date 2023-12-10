@@ -10,7 +10,7 @@ public class ImageCanvas : MonoBehaviour
     public List<Deference> buttons = new List<Deference>(); 
     public Image img1;
     public Image img2;
-
+    public GameObject levelUI;
     public Sprite[] firstImages;
     public Sprite[] secondImages;
 
@@ -22,6 +22,7 @@ public class ImageCanvas : MonoBehaviour
         {
             img1.sprite = firstImages[inc];
             img2.sprite = secondImages[inc];
+            
             ChangeTexts();
         }
        
@@ -37,11 +38,23 @@ public class ImageCanvas : MonoBehaviour
 
     public void ShowResult(bool isTrue)
     {
-        if (isTrue)
-            resultText.text = "DOÐRU";
+        
+        if (isTrue) {
+            
+            if(inc == 4)
+            {
+                resultText.text = "TEBRIKLER CIKISA GIDEBILIRSINIZ";
+                levelUI.SetActive(true);
+            }
+            else
+            {
+                resultText.text = "DOGRU";
+            }
+        }
+
         
         else
-            resultText.text = "YANLIÞ";
+            resultText.text = "TEKRAR DENEYINIZ";
 
     }
 }
