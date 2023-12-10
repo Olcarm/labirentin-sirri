@@ -60,7 +60,7 @@ public class CiftKapi : MonoBehaviour
     public void RestartLevel()
     {
         HideAll();
-        SceneTransitionManager.singleton.GoToSceneAsync(currentIndex);
+        SceneTransitionManager.singleton.GoToSceneAsync(3);
     }
     public void NextLevel()
     {
