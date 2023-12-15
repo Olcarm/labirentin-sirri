@@ -19,7 +19,14 @@ public class TabloFarkiUI : MonoBehaviour
     public int nextIndex;
     public int currentIndex;
     public List<Button> returnButtons;
-    // Start is called before the first frame update
+
+    [Header("Level Buttons")]
+    public Button Level1Button;
+    public Button Level2Button;
+    public Button Level3Button;
+    public Button Level4Button;
+    public Button Level5Button;
+    
     void Start()
     {
         EnableLevelMenu();
@@ -28,6 +35,11 @@ public class TabloFarkiUI : MonoBehaviour
         restartButton.onClick.AddListener(RestartLevel);
         mainMenuButton.onClick.AddListener(ReturnToMain);
         selectLevelButton.onClick.AddListener(SelectLevels);
+        Level1Button.onClick.AddListener(ChangeLevelto1);
+        Level2Button.onClick.AddListener(ChangeLevelto2);
+        Level3Button.onClick.AddListener(ChangeLevelto3);
+        Level4Button.onClick.AddListener(ChangeLevelto4);
+        Level5Button.onClick.AddListener(ChangeLevelto5);
 
         foreach (var item in returnButtons)
         {
@@ -72,5 +84,31 @@ public class TabloFarkiUI : MonoBehaviour
     {
         HideAll();
         SceneTransitionManager.singleton.GoToSceneAsync(0);
+
+    }
+    public void ChangeLevelto1()
+    {
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(1);
+    }
+    public void ChangeLevelto2()
+    {
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(2);
+    }
+    public void ChangeLevelto3()
+    {
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(3);
+    }
+    public void ChangeLevelto4()
+    {
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(4);
+    }
+    public void ChangeLevelto5()
+    {
+        HideAll();
+        SceneTransitionManager.singleton.GoToScene(5);
     }
 }
