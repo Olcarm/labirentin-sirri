@@ -25,6 +25,7 @@ public class Level1UI : MonoBehaviour
     public Button Level3Button;
     public Button Level4Button;
     public Button Level5Button;
+    public Button HandResetButton;
     [Header("Socket Interactors")]
     public GameObject object1;
     public GameObject socket1;
@@ -35,6 +36,7 @@ public class Level1UI : MonoBehaviour
     public GameObject object4;
     public GameObject socket4;
     public Transform playerPosition;
+    
     [Header("Next Level Index")]
     public int nextIndex;
 
@@ -59,6 +61,7 @@ public class Level1UI : MonoBehaviour
         Level4Button.onClick.AddListener(ChangeLevelto4);
         Level5Button.onClick.AddListener(ChangeLevelto5);
         tekrarButton.onClick.AddListener(RestartLevel);
+        HandResetButton.onClick.AddListener(RestartLevel);
         foreach (var item in returnButtons)
         {
             item.onClick.AddListener(EnableLevelMenu);
