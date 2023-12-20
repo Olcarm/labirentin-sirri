@@ -5,21 +5,15 @@ using UnityEngine;
 public class Panzehir : MonoBehaviour
 {
     AudioSource _audioSource;
+    public string icmeSes;
 
     public bool IsFinished = false;
-    void Start()
-    {
-        _audioSource = GetComponent<AudioSource>();
-        _audioSource.playOnAwake = false;
-        
-    }
 
-    [ContextMenu("Consume")]
     public void Consume()
     {
         if (!IsFinished)
         {
-           _audioSource.Play();
+            AudioManager.instance.Play(icmeSes);
             Destroy(this.gameObject);
             IsFinished = true;
         }

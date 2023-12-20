@@ -16,16 +16,22 @@ public class PotionChecks : MonoBehaviour
     [Header("Potions")]
     public GameObject potYellow;
     Vector3 yellowPos;
+
     public GameObject potOrange;
     Vector3 orangePos;
+
     public GameObject potPink;
     Vector3 pinkPos;
+
     public GameObject potRed;
     Vector3 redPos;
+
     public GameObject potBlue;
     Vector3 bluePos;
+
     public GameObject potGreen;
     Vector3 greenPos;
+
     
     [Header("Menu")]
     public GameObject MenuUI;
@@ -41,7 +47,9 @@ public class PotionChecks : MonoBehaviour
     public GameObject check1;
     public GameObject check2;
     public GameObject check3;
-
+    [Header("Sesler")]
+    public string kazanaAtma;
+    public string hata;
     private int pot1;
     private int pot2;
     private int pot3;
@@ -129,7 +137,7 @@ public class PotionChecks : MonoBehaviour
     }
     void OnTriggerEnter(Collider col)
     {
-        
+        AudioManager.instance.Play(kazanaAtma);
         if(opt1 == false)
         {
             if (col.gameObject.CompareTag(obj1.tag))
@@ -139,6 +147,7 @@ public class PotionChecks : MonoBehaviour
             }
             else
             {
+                AudioManager.instance.Play(hata);
                 ResetOrderOfPots();
                 ChangeColors(img1, pot1, obj1);
                 ChangeColors(img2, pot2, obj2);
@@ -154,6 +163,7 @@ public class PotionChecks : MonoBehaviour
             }
             else
             {
+                AudioManager.instance.Play(hata);
                 opt1 = false;
                 check1.SetActive(false);
                 ResetOrderOfPots();
@@ -174,6 +184,7 @@ public class PotionChecks : MonoBehaviour
             }
             else
             {
+                AudioManager.instance.Play(hata);
                 opt1 = false;
                 opt2 = false;
                 check1.SetActive(false);
