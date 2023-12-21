@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Panzehir : MonoBehaviour
 {
-    AudioSource _audioSource;
 
     public bool IsFinished = false;
     void Start()
     {
-        _audioSource = GetComponent<AudioSource>();
-        _audioSource.playOnAwake = false;
+
         
     }
 
@@ -19,7 +17,7 @@ public class Panzehir : MonoBehaviour
     {
         if (!IsFinished)
         {
-           _audioSource.Play();
+            AudioManager.instance.Play("drinking");
             Destroy(this.gameObject);
             IsFinished = true;
         }
