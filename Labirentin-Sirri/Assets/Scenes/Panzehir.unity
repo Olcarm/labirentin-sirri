@@ -2630,7 +2630,7 @@ MonoBehaviour:
   restartButton: {fileID: 2008140111}
   mainMenuButton: {fileID: 68125130}
   selectLevelButton: {fileID: 781824006}
-  handRestartButton: {fileID: 398441886}
+  handMenu: {fileID: 398441886}
   Level1Button: {fileID: 972814208}
   Level2Button: {fileID: 1845797489}
   Level3Button: {fileID: 1700117215}
@@ -9659,6 +9659,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f389a9d2aeaaab4091439d364e55385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnDropdown: {fileID: 0}
+  selectScene: 0
+  levelButton: {fileID: 0}
 --- !u!4 &1107698440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8164705571879959090, guid: 69bcbe8a3c723a8459bad61946074109,
@@ -16885,7 +16888,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 538888466}

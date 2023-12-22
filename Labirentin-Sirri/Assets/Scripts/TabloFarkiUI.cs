@@ -14,6 +14,7 @@ public class TabloFarkiUI : MonoBehaviour
     public Button restartButton;
     public Button mainMenuButton;
     public Button selectLevelButton;
+    public Button handMenu;
 
     [Header("Level Index")]
     public int nextIndex;
@@ -28,6 +29,7 @@ public class TabloFarkiUI : MonoBehaviour
         restartButton.onClick.AddListener(RestartLevel);
         mainMenuButton.onClick.AddListener(ReturnToMain);
         selectLevelButton.onClick.AddListener(SelectLevels);
+        handMenu.onClick.AddListener(RestartLevel);
 
         foreach (var item in returnButtons)
         {

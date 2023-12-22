@@ -15,6 +15,7 @@ public class CiftKapi : MonoBehaviour
     public Button mainMenuButton;
     public Button selectLevelButton;
     public Button tekrarDeneButton;
+    public Button handMenu;
     [Header("Level Index")]
     public int nextIndex;
     public int currentIndex;
@@ -29,6 +30,7 @@ public class CiftKapi : MonoBehaviour
         mainMenuButton.onClick.AddListener(ReturnToMain);
         selectLevelButton.onClick.AddListener(SelectLevels);
         tekrarDeneButton.onClick.AddListener(RestartLevel);
+        handMenu.onClick.AddListener(RestartLevel);
         foreach (var item in returnButtons)
         {
             item.onClick.AddListener(EnableLevelMenu);

@@ -19,6 +19,7 @@ public class Level1UI : MonoBehaviour
     public Button mainMenuButton;
     public Button selectLevelButton;
     public Button tekrarButton;
+    public Button handButton;
     [Header("Level Buttons")]
     public Button Level1Button;
     public Button Level2Button;
@@ -59,6 +60,7 @@ public class Level1UI : MonoBehaviour
         Level4Button.onClick.AddListener(ChangeLevelto4);
         Level5Button.onClick.AddListener(ChangeLevelto5);
         tekrarButton.onClick.AddListener(RestartLevel);
+        handButton.onClick.AddListener(RestartLevel);
         foreach (var item in returnButtons)
         {
             item.onClick.AddListener(EnableLevelMenu);
