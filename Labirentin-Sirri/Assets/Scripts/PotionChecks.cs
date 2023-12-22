@@ -129,8 +129,8 @@ public class PotionChecks : MonoBehaviour
     }
     void OnTriggerEnter(Collider col)
     {
-        
-        if(opt1 == false)
+        AudioManager.instance.Play("iksiratma");
+        if (opt1 == false)
         {
             if (col.gameObject.CompareTag(obj1.tag))
             {
@@ -143,6 +143,7 @@ public class PotionChecks : MonoBehaviour
                 ChangeColors(img1, pot1, obj1);
                 ChangeColors(img2, pot2, obj2);
                 ChangeColors(img3, pot3, obj3);
+                AudioManager.instance.Play("hata");
             }
         }
         else if(opt1 == true && opt2 == false)
@@ -160,6 +161,7 @@ public class PotionChecks : MonoBehaviour
                 ChangeColors(img1, pot1, obj1);
                 ChangeColors(img2, pot2, obj2);
                 ChangeColors(img3, pot3, obj3);
+                AudioManager.instance.Play("hata");
             }
         }
         else if (opt1 == true && opt2 == true)
@@ -171,6 +173,7 @@ public class PotionChecks : MonoBehaviour
                 panzehir.SetActive(true);
                 icme.SetActive(true);
                 tarif.SetActive(false);
+                AudioManager.instance.Play("basari");
             }
             else
             {
@@ -182,6 +185,7 @@ public class PotionChecks : MonoBehaviour
                 ChangeColors(img1, pot1, obj1);
                 ChangeColors(img2, pot2, obj2);
                 ChangeColors(img3, pot3, obj3);
+                AudioManager.instance.Play("hata");
             }
         }
         ReturnObjects();
