@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LevelTemplateSettings : MonoBehaviour
+public class LevelUI : MonoBehaviour
 {
     [Header("UI Pages")]
     public GameObject levelMenu;
@@ -60,12 +60,12 @@ public class LevelTemplateSettings : MonoBehaviour
     public void RestartLevel()
     {
         HideAll();
-        SceneTransitionManager.singleton.GoToSceneAsync(4);
+        SceneTransitionManager.singleton.GoToSceneAsync(currentIndex);
     }
     public void NextLevel()
     {
         HideAll();
-        SceneTransitionManager.singleton.GoToSceneAsync(6);
+        SceneTransitionManager.singleton.GoToSceneAsync(nextIndex);
     }
     public void ReturnToMain()
     {

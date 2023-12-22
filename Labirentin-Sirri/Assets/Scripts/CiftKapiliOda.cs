@@ -33,7 +33,7 @@ public class CiftKapiliOda : MonoBehaviour
         b = UnityEngine.Random.Range(0, 50);
         c = UnityEngine.Random.Range(0, 50);
         d = UnityEngine.Random.Range(0, 50);
-        islemtext.text = (a + "+" + b + "x" + c + "-" + d);
+        islemtext.text = (a + "+" + b + "*" + c + "-" + d);
          
         Islem();
         

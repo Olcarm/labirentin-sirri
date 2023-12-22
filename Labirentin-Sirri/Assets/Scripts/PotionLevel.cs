@@ -16,7 +16,6 @@ public class PotionLevel : MonoBehaviour
     public Button restartButton;
     public Button mainMenuButton;
     public Button selectLevelButton;
-    public Button handRestartButton;
     [Header("Level Buttons")]
     public Button Level1Button;
     public Button Level2Button;      
@@ -41,7 +40,6 @@ public class PotionLevel : MonoBehaviour
         Level3Button.onClick.AddListener(ChangeLevelto3);
         Level4Button.onClick.AddListener(ChangeLevelto4);
         Level5Button.onClick.AddListener(ChangeLevelto5);
-        handRestartButton.onClick.AddListener(RestartLevel);
         foreach (var item in returnButtons)
         {
             item.onClick.AddListener(EnableLevelMenu);
@@ -79,7 +77,7 @@ public class PotionLevel : MonoBehaviour
     public void NextLevel()
     {
         HideAll();
-        SceneTransitionManager.singleton.GoToSceneAsync(Application.loadedLevel + 1);
+        SceneTransitionManager.singleton.GoToSceneAsync(nextIndex);
     }
     public void ReturnToMain()
     {

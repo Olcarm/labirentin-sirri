@@ -14,7 +14,9 @@ public class PlayPiano : MonoBehaviour
         string notaName=collision.gameObject.GetComponent<Nota>().GetNotaTusu();
         basilanTusListesi.Add(notaName);
     }
-    void Update(){
+
+    void Update()
+    {
         SarkiKontrol();
     }
 
