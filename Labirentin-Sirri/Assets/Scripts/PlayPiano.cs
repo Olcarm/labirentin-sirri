@@ -8,6 +8,7 @@ public class PlayPiano : MonoBehaviour
     public List<string> notaListesi=new List<string>();
 
     public GameObject Menu;
+    public GameObject Window;
     public List<string> basilanTusListesi=new List<string>();
     private void OnCollisionEnter(Collision collision)
     {
@@ -37,6 +38,7 @@ public class PlayPiano : MonoBehaviour
                 }
                 if (uyumlu)
                 {
+                    Window.SetActive(true);
                     Menu.SetActive(true);
                     break;
                 }
